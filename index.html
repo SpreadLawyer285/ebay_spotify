@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <nav>
+           <div id="logo" class="iconok">
+             <img src="kepek/Jegyzet 2025-04-28 091015.png" alt="">
+           </div>
+           <hr>
+           <div onclick="sidebarOn()" id="navbar" class="iconok">
+             <img src="kepek/Jegyzet 2025-04-28 091046.png" alt="">
+           </div>
+           <div id="sidebar">
+             <p id="back" onclick="backSide()">X</p>
+             <hr>
+             <ul>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Playlists</a></li>
+             </ul>
+           </div>
+        </nav>
+        <section>
+            <div id="playornot">
+                <p>
+                    <span id="play">Playing </span> / <span id="pause"> Paused</span>
+                </p>
+            </div>
+            <div id="player">
+                <div id="previous" class="buttons"><img src="kepek/Jegyzet 2025-04-28 093729.png" alt=""></div>
+                <div id="disc" onclick="startRotation()"><img src="kepek/Jegyzet 2025-04-28 091850.png" alt=""></div>
+                <div id="next" class="buttons"><img src="kepek/Jegyzet 2025-04-28 093729.png" alt=""></div>
+            </div>
+            <div id="artist">
+                <audio controls>
+                    <source src="zenek/Espada.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+        <footer>
+            <hr>
+        </footer>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+</html>
